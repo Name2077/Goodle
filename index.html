@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    <title>тест по обществу</title>
+  </head>
+  <body>
+    <style media="screen">
+      body {
+        background-color: black;
+
+      }
+
+      #mySearch {
+        background-color: grey;
+  width: 80%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+}
+
+/* Стиль меню навигации */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стиль навигационных ссылок */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+    </style>
+    <form class="" action="" >
+
+  <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+  </form>
+
+  <script type="text/javascript">
+  function myFunction() {
+    // Объявить переменные
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+
+    // Перебирайте все элементы списка и скрывайте те, которые не соответствуют поисковому запросу
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+  <ul id="myMenu">
+  <li><a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE#:~:text=%D0%9F%D1%80%D0%B0%CC%81%D0%B2%D0%B8%D0%BB%D0%BE%20%E2%80%94%20%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BD%D0%B5%D0%BA%D0%B8%D1%85,%D0%BF%D0%BE%D0%BE%D1%89%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%2C%20%D0%B7%D0%B0%20%D0%BD%D0%B5%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%80%94%20%D0%BD%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5." style="color:white">правила</a></li>
+  <li><a href="https://www.un.org/ru/sections/issues-depth/human-rights/index.html#:~:text=%D0%9F%D1%80%D0%B0%D0%B2%D0%B0%20%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%20%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%8E%D1%82%20%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%20%D0%BD%D0%B0,%2C%20%D0%B1%D0%B5%D0%B7%20%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9%2D%D0%BB%D0%B8%D0%B1%D0%BE%20%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B8%D0%BC%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8." style="color:white">Права человеков</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D0%B8%D1%8F" style="color:white">Конституция</a></li>
+      <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D0%BE%D1%81%D1%82%D1%8C_%D0%B2%D0%B0%D0%BB%D1%8E%D1%82#:~:text=convertere%20%E2%80%94%20%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD%D1%8F%D1%82%D1%8C)%20%E2%80%94%20%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82,%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%8B%2C%20%D0%B2%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%D0%B0%20%D1%86%D0%B8%D1%80%D0%BA%D1%83%D0%BB%D0%B8%D1%80%D1%83%D0%B5%D1%82." style="color:white">Конвертирование валют</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BA%D0%B5%D1%82" style="color:white">Пакет</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D1%82%D0%B0%D1%80%D0%B8%D0%B0%D1%82" style="color:white">Нотариат</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB" style="color:white">Номинал</a></li>
+              <li><a href="https://ru.wiktionary.org/wiki/%D1%81%D1%83%D0%B4%D0%BE%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE" style="color:white">судопроизводство</a></li>
+                <li><a href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0" style="color:white">экономика</a></li>
+                  <li><a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%89%D0%B5%D1%80%D0%B1" style="color:white">Ущерб(для даунов класса)</a></li>
+                      <li><a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BA%D1%83%D1%80%D0%BE%D1%80#:~:text=%D0%92%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%BC%20%D0%B2%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B0%D1%85%20%D0%A1%D0%9D%D0%93,%D0%BF%D1%80%D0%BE%D0%BA%D1%83%D1%80%D0%BE%D1%80%20%D0%BE%D0%B1%D0%BB%D0%B0%D0%B4%D0%B0%D0%B5%D1%82%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B8%D0%BA%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%D1%8E%20%D0%B2%20%D0%BD%D0%B5%D0%BE%D0%B1%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D1%8B%D1%85" style="color:white">прокурор</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BA%D1%83%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0" style="color:white">прокуратура</a></li>
+                          <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4%D0%B5%D0%BA%D1%81" style="color:white">кодекс</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F" style="color:white">оптимизация</a></li>
+                              <li><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B2%D0%B5%D1%81%D1%82%D0%BA%D0%B0" style="color:white">повестка</a></li>
+                                <li><a href="https://kartaslov.ru/%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0/%D0%B4%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9#:~:text=%D0%A0%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9%2C%20%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9%2C%20%D0%BD%D0%B5%20%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20(,%D0%94%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D1%8B%20%D0%B1%D0%BE%D1%80%D1%8C%D0%B1%D1%8B.>" style="color:white">дозволеное</a></li>
+                                  <li><a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B0%D1%80%D0%B8%D0%B0%D1%82" style="color:white">военкомат</a></li>
+
+
+
+</ul>
+  </body>
+</html>
