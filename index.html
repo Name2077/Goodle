@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhz9DMniODoBRDImhFuwkzHoZLmCWFCIamhQ&usqp=CAU" />
+    <title>Goodle</title>
+  </head>
+  <body>
+    <style media="screen">
+      body {
+        background-color: black;
+
+      }
+
+      #mySearch {
+        background-color: grey;
+        margin-left: 30px;
+  width: 80%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+  padding-left: 15px;
+  border-radius: 5px/5px;
+  border: none;
+
+}
+
+/* Стиль меню навигации */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стиль навигационных ссылок */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+h2 {
+  margin-left: 100px;
+
+}
+    </style>
+    <form class="" action="" >
+ <strong><h2 style="color:white">Goodle</h2></strong>
+  <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+  </form>
+
+  <script type="text/javascript">
+  function myFunction() {
+    // Объявить переменные
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+
+    // Перебирайте все элементы списка и скрывайте те, которые не соответствуют поисковому запросу
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+  <ul id="myMenu">
+    <li><a href="" style="color:black">проект закрыт</a></li>
+<li><a href="" style="color:grey">VK</a></li>
+<li><a href="" style="color:grey">член </a></li>
+<li><a href="" style="color:grey">гей порно </a></li>
+<li><a href="" style="color:grey">хентай с сестрой без смс и регестрации </a></li>
+<li><a href="" style="color:grey">как закопать дневгик от</a></li>
+<li><a href="" style="color:grey">пистолетик</a></li>
+<li><a href="" style="color:grey">как отправить в дет дом своего брата</a></li>
+<li><a href="" style="color:grey">как вырастить член до 15 см</a></li>
+</ul>
+
+<script type="module" src="chrome://new-tab-page/new_tab_page.js">
+
+</script>
+
+
+  </body>
+</html>
